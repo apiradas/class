@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby1.9
 
 class Class
-
+#comment
    
   def getAllSubclassesWithIndent(all,  level) #TODO this is silly inefficient - tune
     ObjectSpace.each_object(Class) .select { |klass| klass.superclass ==  self and klass.name != nil}.  #TODO  why are some class names nil?!?
