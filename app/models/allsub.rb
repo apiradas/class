@@ -4,7 +4,11 @@ class Class
 #comment
 #an after merge comment
 
+
 #new stuff from Apirada
+
+#mt stuff
+
    
   def getAllSubclassesWithIndent(all,  level) #TODO this is silly inefficient - tune
     ObjectSpace.each_object(Class) .select { |klass| klass.superclass ==  self and klass.name != nil}.  #TODO  why are some class names nil?!?
